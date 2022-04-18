@@ -1,8 +1,18 @@
 import styled from 'styled-components'
 
+export const Wrapper = styled.div`
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+`
+
 export const Brand = styled.h1`
     margin-top: 1rem;
     margin-bottom: 3rem;
+
+    .tag {
+        font-size: 1rem;
+    }
 `
 
 export const Questions = styled.ul`
@@ -14,7 +24,6 @@ export const Questions = styled.ul`
 export const Question = styled.li`
     .title {
         font-size: 1.5rem;
-        margin-bottom: 1rem;
     }
 `
 

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import Button from '../../components/button';
+import Tutorial from '../../components/home/Tutorial';
 import * as styles from './index.styled';
 
 const questions = [
@@ -58,8 +59,11 @@ const Home = props => {
     }
 
     return (
-        <div>
-            <styles.Brand>Quizy</styles.Brand>
+        <styles.Wrapper>
+            <styles.Brand className="d-flex justify-content-center">
+                Quizy
+                <p className='tag'>v0.1.0</p>
+            </styles.Brand>
             <form
             // onSubmit={handleGoToNext}
             >
@@ -90,7 +94,10 @@ const Home = props => {
                     Next
                 </Button> */}
             </form>
-        </div>
+            <Tutorial>
+
+            </Tutorial>
+        </styles.Wrapper>
     )
 }
 
